@@ -1,19 +1,13 @@
 <template>
   <div id="app">
-    <Header/>
-    <router-view/>
-    <FooterGuide/>
+    <keep-alive>
+      <router-view/>
+    </keep-alive>
   </div>
 </template>
 
 <script>
-import FooterGuide from './components/FooterGuide/FooterGuide'
-import Header from './components/Header/Header'
 export default {
-  components: {
-    FooterGuide,
-    Header
-  }
 }
 </script>
 

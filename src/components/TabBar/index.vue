@@ -1,18 +1,18 @@
 <template>
   <div id="footer">
     <ul>
-      <li>
-        <img src="../../images/movie.png" alt="" style="width:25px; height:25px">
+      <router-link tag="li" to="/movie">
+        <i class="icon iconfont icon-movie"></i>
         <p>电影</p>
-      </li>
-      <li class="movie" >
-        <img src="../../images/cinema.png" alt="" style="width:25px; height:25px">
+      </router-link>
+      <router-link class="movie" tag="li" to="/cinema">
+        <i class="icon iconfont icon-cinema"></i>
         <p>影院</p>
-      </li>
-      <li class="movie">
-        <img src="../../images/my.png" alt="" style="width:25px; height:25px">
+      </router-link>
+      <router-link class="movie" tag="li" to="/mine">
+        <i class="icon iconfont icon-custom-my"></i>
         <p>我的</p>
-      </li>
+      </router-link>
     </ul>
   </div>
 </template>
@@ -40,6 +40,12 @@ export default {
       margin-top:5px;
       margin-left: 20px;
     }
+  li.active{
+    color:white;
+  }
+  i{
+    font-size:25px;
+  }
   .movie{
     margin-left:32%;
   }

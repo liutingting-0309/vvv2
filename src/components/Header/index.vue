@@ -1,11 +1,13 @@
 <template>
   <div id="Header">
-  ngh
+    <h1>喵喵影院</h1>
   </div>
 </template>
 
 <script>
-export default {}
+export default {
+  name: 'Header'
+}
 </script>
 
 <style lang="less" scoped>
