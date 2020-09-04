@@ -1,29 +1,25 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import Msite from '../pages/Msite/Msite'
-import Search from '../pages/Search/Search'
-import Order from '../pages/Order/Order'
-import Profile from '../pages/Profile/Profile'
+import Mine from '../pages/Mine/mine'
+import Cinema from '../pages/Cinema/cinema'
+import Movie from '../pages/Movie/movie'
 
 Vue.use(VueRouter)
 
 const router = new VueRouter({
-  route: [
+  routes: [
+    { path: '/', redirect: '/movie' },
     {
-      path: '/msite',
-      component: Msite
+      path: '/mine',
+      component: Mine
     },
     {
-      path: '/search',
-      component: Search
+      path: '/cinema',
+      component: Cinema
     },
     {
-      path: '/order',
-      component: Order
-    },
-    {
-      path: '/profile',
-      component: Profile
+      path: '/movie',
+      component: Movie
     }
   ]
 })
