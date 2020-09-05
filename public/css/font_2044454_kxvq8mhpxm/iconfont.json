@@ -1,0 +1,65 @@
+{
+  "id": "2044454",
+  "name": "vvv2",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "506905",
+      "name": "my",
+      "font_class": "custom-my",
+      "unicode": "e608",
+      "unicode_decimal": 58888
+    },
+    {
+      "icon_id": "1555835",
+      "name": "movie",
+      "font_class": "movie",
+      "unicode": "e6bb",
+      "unicode_decimal": 59067
+    },
+    {
+      "icon_id": "1555846",
+      "name": "cinema",
+      "font_class": "cinema",
+      "unicode": "e6c2",
+      "unicode_decimal": 59074
+    },
+    {
+      "icon_id": "7141595",
+      "name": "search",
+      "font_class": "search",
+      "unicode": "e625",
+      "unicode_decimal": 58917
+    },
+    {
+      "icon_id": "7685333",
+      "name": "up",
+      "font_class": "up",
+      "unicode": "e74d",
+      "unicode_decimal": 59213
+    },
+    {
+      "icon_id": "10043872",
+      "name": "Left",
+      "font_class": "Left",
+      "unicode": "e628",
+      "unicode_decimal": 58920
+    },
+    {
+      "icon_id": "12136486",
+      "name": "down",
+      "font_class": "down",
+      "unicode": "e612",
+      "unicode_decimal": 58898
+    },
+    {
+      "icon_id": "7642955",
+      "name": "新品",
+      "font_class": "xinpin-",
+      "unicode": "e606",
+      "unicode_decimal": 58886
+    }
+  ]
+}
