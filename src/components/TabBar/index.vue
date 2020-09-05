@@ -28,7 +28,7 @@ export default {
   #footer{
     width:100%;
     height:60px;
-    background-color: indianred;
+    background-color: honeydew;
     justify-content: space-between;
     position:absolute;
     bottom:0;
@@ -39,6 +39,7 @@ export default {
       text-align: center;
       margin-top:5px;
       margin-left: 20px;
+      color:darkgrey;
     }
   li.active{
     color:white;
@@ -52,5 +53,11 @@ export default {
   p{
     margin: 0;
     font-size:15px;
+  }
+  #footer ul li.router-link-active{
+    color:#f03d37;
+  }
+  #footer ul li.active{
+    color:#f03d37;
   }
 </style>

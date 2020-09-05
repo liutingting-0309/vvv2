@@ -1,12 +1,18 @@
 <template>
   <div id="Header">
-    <h1>喵喵影院</h1>
+    <h1>{{title}}</h1>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'Header'
+  name: 'Header',
+  props: {
+    title: {
+      type: String,
+      default: '喵喵电影'
+    }
+  }
 }
 </script>
 
@@ -17,5 +23,6 @@ export default {
     background-color: indianred;
     text-align: center;
     line-height:50px;
+    font-size:12px;
   }
 </style>
