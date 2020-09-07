@@ -2,18 +2,18 @@
   <div>
     <Headers  title="喵喵电影"/>
     <div id="content">
-      <router-link tag="div" to="/movie/city">
-        <span>大连</span><i class="iconfont icon-down"></i>
-      </router-link>
-      <div class="switchModule">
-        <router-link tag="div" to="/movie/nowPlaying">正在热映</router-link>
-        <router-link tag="div" to="/movie/comingSoon">即将上映</router-link>
-      </div>
-      <div class="search">
-        <router-link tag="div" to="/movie/search">
-          <i class="iconfont icon-search"></i>
+        <router-link tag="div" to="/movie/city">
+          <span>大连</span><i class="iconfont icon-down"></i>
         </router-link>
-      </div>
+        <div class="switchModule">
+          <router-link tag="div" to="/movie/nowPlaying">正在热映</router-link>
+          <router-link tag="div" to="/movie/comingSoon">即将上映</router-link>
+        </div>
+        <div class="search">
+          <router-link tag="div" to="/movie/search">
+            <i class="iconfont icon-search"></i>
+          </router-link>
+        </div>
     </div>
     <router-view></router-view>
     <TabBar/>
@@ -42,12 +42,16 @@ export default {
   line-height:40px;
   text-align: center;
   padding:5px;
+  margin-top:50px;
 }
 .switchModule{
   display: flex;
 }
 .switchModule div{
   margin-left:45px;
+}
+.switchModule div.router-link-active{
+  color:#fff;
 }
 .search{
   margin-left:35px;

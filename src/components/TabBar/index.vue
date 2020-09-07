@@ -30,7 +30,7 @@ export default {
     height:60px;
     background-color: honeydew;
     justify-content: space-between;
-    position:absolute;
+    position:fixed;
     bottom:0;
   }
   li{

@@ -24,5 +24,7 @@ export default {
     text-align: center;
     line-height:50px;
     font-size:12px;
+    position: fixed;
+    top:0;
   }
 </style>
