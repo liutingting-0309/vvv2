@@ -13,6 +13,6 @@ export default {
     { path: 'search', component: Search },
     { path: 'nowPlaying', component: NowPlaying },
     { path: 'comingSoon', component: ComingSoon },
-    { path: 'info', component: MovieInfo }
+    { path: '/movie/info', component: MovieInfo }
   ]
 }

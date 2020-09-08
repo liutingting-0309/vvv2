@@ -1,19 +1,19 @@
 <template>
   <div id="footer">
-    <ul>
-      <router-link tag="li" to="/movie">
+    <div class="tabbar">
+      <router-link tag="div" to="/movie">
         <i class="icon iconfont icon-movie"></i>
         <p>电影</p>
       </router-link>
-      <router-link class="movie" tag="li" to="/cinema">
+      <router-link class="movie" tag="div" to="/cinema">
         <i class="icon iconfont icon-cinema"></i>
         <p>影院</p>
       </router-link>
-      <router-link class="movie" tag="li" to="/mine">
+      <router-link class="movie" tag="div" to="/mine">
         <i class="icon iconfont icon-custom-my"></i>
         <p>我的</p>
       </router-link>
-    </ul>
+    </div>
   </div>
 </template>
 
@@ -33,15 +33,20 @@ export default {
     position:fixed;
     bottom:0;
   }
-  li{
-      float:left;
+  .tabbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .tabbar div{
       list-style: none;
       text-align: center;
       margin-top:5px;
       margin-left: 20px;
       color:darkgrey;
     }
-  li.active{
+  div.active{
     color:white;
   }
   i{
@@ -54,10 +59,10 @@ export default {
     margin: 0;
     font-size:15px;
   }
-  #footer ul li.router-link-active{
+  #footer .tabbar div.router-link-active{
     color:#f03d37;
   }
-  #footer ul li.active{
+  #footer .tabbar div.active{
     color:#f03d37;
   }
 </style>

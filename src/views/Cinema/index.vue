@@ -1,7 +1,14 @@
 <template>
   <div>
     <Headers title="喵喵影院"/>
-    cinema
+    <div class="cineTitle">
+      <div>全城<i class="iconfont icon-down"></i></div>
+      <div>品牌<i class="iconfont icon-down"></i></div>
+      <div>特色<i class="iconfont icon-down"></i></div>
+    </div>
+    <div class="content">
+      <router-view></router-view>
+    </div>
     <TabBar/>
   </div>
 </template>
@@ -21,5 +28,12 @@ export default {
 </script>
 
 <style lang="stylus" rel="stylesheet/stylus">
-
+.cineTitle{
+  height:50px;
+  background-color: #e7e1cd;
+  margin-top 50px;
+  display:flex;
+  justify-content: space-around;
+  align-items: center;
+}
 </style>

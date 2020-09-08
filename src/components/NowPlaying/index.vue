@@ -11,7 +11,7 @@
           <p class="intro">今天{{item.cine}}家影院放映{{item.sess}}场</p>
         </div>
         <div class="tickets">
-          <div  class="btn">购票</div>
+          <div class="btn">购票</div>
         </div>
       </div>
   </div>
@@ -77,7 +77,7 @@ export default {
   },
   methods: {
     toInfo () {
-      this.$router.push('info')
+      this.$router.push('/movie/info')
     }
   }
 }
@@ -86,7 +86,7 @@ export default {
 <style lang="less" scoped>
 #movieHe{
   height: 120px;
-  width: 100%;
+  /*width: 100%;*/
   /*border: 1px solid red;*/
   display: flex;
   padding: 10px 7px;
